@@ -6,6 +6,21 @@ Scripts to modify [SeaDAS](https://seadas.gsfc.nasa.gov/) for using [SS14](https
 
 *To install these scripts in [SeaDAS](https://seadas.gsfc.nasa.gov/), it should be compiled. The process to compile [SeaDAS](https://seadas.gsfc.nasa.gov/) can be found [here](https://seadas.gsfc.nasa.gov/build_ocssw/#building-the-code).*
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+*If you want to use kappa as a L2 product you will need to modify l2prod.h, l12_proto.h and prodgen.c as mentioned in HOWTO_Add_a_product.txt present in the l2gen folder inside [ocssw](https://oceancolor.gsfc.nasa.gov/docs/ocssw/index.html).*
+
 Singh, R.K., Shanmugam, P., 2014. A novel method for estimation of aerosol radiance and its extrapolation in the atmospheric correction of satellite data over optically complex oceanic waters. Remote Sens. Environ. 142, 188–206. https://doi.org/10.1016/j.rse.2013.12.001
 
 
