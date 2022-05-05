@@ -5,7 +5,7 @@
 /* atmocor2() - atmospheric correction, converts Lt -> nLw                                 */
 /*                                                                                         */
 /* C-version, September 2004, B. Franz                                                     */
-/* Added SS14 and SSP aerosol corredtion, October 2021, R. K. Singh                        */
+/* Added SS14 and SSP aerosol correction, October 2021, R. K. Singh                        */
 /* --------------------------------------------------------------------------------------- */
 
 int atmocor2(l2str *l2rec, aestr *aerec, int32_t ip) {
