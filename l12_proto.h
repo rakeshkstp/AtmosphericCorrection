@@ -489,11 +489,6 @@ int giop_ran(int recnum);
 /* MODIFIED HERE */
 float calc_kappa(int32_t sensorID, float rfr[]);
 void get_kappa(l2str *l2rec, float kappa[]);
-void get_uqar_utils(l2str *l2rec, int prodnum, float prod[]);
-void get_spm(l2str *l2rec, float spm[]);
-void get_spm_raph(l2str *l2rec, float spm[]);
-void get_alg(l2str *l2rec, float alg[]);
-void get_ag440_raph(l2str *l2rec, float ag440[]);
 
 #ifdef __cplusplus
 }
