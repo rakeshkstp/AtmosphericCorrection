@@ -9,13 +9,13 @@ Scripts to modify [SeaDAS](https://seadas.gsfc.nasa.gov/) for using [SS14](https
 
 ## How to use these scripts?
 
-* Backup the existing scripts in $OCSSWROOT/ocssw_src/src/l2gen and then place the scripts provided here.
-* Add calc_kappa.c to CMakeLists.txt present in $OCSSWROOT/ocssw_src/src/l2gen in both l2gen and l3gen executable sections.
+* Backup the existing scripts in `$OCSSWROOT/ocssw_src/src/l2gen` and then place the scripts provided here.
+* Add the `get_kappa.c` to `$OCSSWROOT/ocssw_src/src/l2gen/CMakeLists.txt` in the `L2GEN_PRODUCT_FILES` section.
 * Compile the code as described [here](https://seadas.gsfc.nasa.gov/build_ocssw/#building-the-code).
-* While running l2gen use aer_opt=-20 for [SSP algorithm](https://doi.org/10.1016/j.rse.2013.12.001) and -21 for [SS14 algorithm](https://doi.org/10.1364/OE.27.0A1118).
+* While running `l2gen` use `aer_opt=-20` for [SSP algorithm](https://doi.org/10.1016/j.rse.2013.12.001) and `aer_opt=-21` for [SS14 algorithm](https://doi.org/10.1364/OE.27.0A1118).
 
 
-* If you want to use kappa as a L2 product you will need to modify l2prod.h, l12_proto.h and prodgen.c as mentioned in HOWTO_Add_a_product.txt present in the $OCSSWROOT/ocssw_src/src/l2gen folder inside [ocssw](https://oceancolor.gsfc.nasa.gov/docs/ocssw/index.html). You will have to add the product in the product.xml file present in $OCDATAROOT/common.
+* If you want to use kappa as a L2 product you will need to modify `l2prod.h`, `l12_proto.h` and `prodgen.c` as mentioned in `HOWTO_Add_a_product.txt` present in the `$OCSSWROOT/ocssw_src/src/l2gen` folder inside [ocssw](https://oceancolor.gsfc.nasa.gov/docs/ocssw/index.html). You will have to add the product in the `product.xml` file present in `$OCDATAROOT/common`.
 
 ## References
 
