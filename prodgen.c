@@ -996,7 +996,7 @@ VOIDP prodgen(l2prodstr *p, l2str *l2rec) {
         pbuf = (VOIDP) fbuf;
     	break;
  /* MODIFIED HERE */
-        case CAT_kappa:
+        case CAT_kappa:  /*Added kappa as a product used in SS14 and SSP algorithm*/
           get_kappa(l2rec, fbuf);
           pbuf = (VOIDP) fbuf;
           break;       
