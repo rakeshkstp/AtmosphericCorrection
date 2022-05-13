@@ -999,40 +999,7 @@ VOIDP prodgen(l2prodstr *p, l2str *l2rec) {
         case CAT_kappa:
           get_kappa(l2rec, fbuf);
           pbuf = (VOIDP) fbuf;
-          break;
-        case CAT_alg:
-          get_alg(l2rec, fbuf);
-          pbuf = (VOIDP) fbuf;
-          break;
-        case CAT_spm:
-          get_spm(l2rec, fbuf);
-          pbuf = (VOIDP) fbuf;
-          break;
-        case CAT_spm_raph:
-          get_spm_raph(l2rec, fbuf);
-          pbuf = (VOIDP) fbuf;
-          break;
-        case CAT_uqar_ag440:
-          get_ag440_raph(l2rec, fbuf);
-          pbuf = (VOIDP) fbuf;
-          break;
-        case CAT_uqar_par0p:
-        case CAT_uqar_par0m:
-        case CAT_uqar_parb:
-        case CAT_uqar_tc:
-        case CAT_uqar_kdpar:
-        case CAT_uqar_isolume:
-        case CAT_uqar_1pc:
-        case CAT_uqar_10pc:
-        case CAT_uqar_ipar:
-        case CAT_uqar_COT:
-        case CAT_uqar_O3:
-        case CAT_uqar_salb:
-        case CAT_uqar_icw:
-          get_uqar_utils(l2rec, p->cat_ix, fbuf);
-          pbuf = (VOIDP) fbuf;
           break;       
-        
     default:
         fprintf(stderr, "-E- %s Line %d: Unknown product catalogue ID %d.\n",
                 __FILE__, __LINE__, p->cat_ix);
