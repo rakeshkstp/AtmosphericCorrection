@@ -18,7 +18,7 @@ void get_kappa(l2str *l2rec, float kappa[])
   int nwave=l1file->nbands;
   float rfr[nwave];
 
-  for (ip = 0; ip < l1rec->npix; ip++)
+  for (ip = 0; ip < l1rec->npix; ip++)  /*Converting and correcting rho_t to rho_s*/
   { for (ib=0; ib<nwave; ib++)
     {   ipb = ip * nwave + ib;
         rfr[ib] =l2rec->l1rec->Lt[ipb];
