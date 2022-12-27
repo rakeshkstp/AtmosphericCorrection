@@ -11,7 +11,7 @@ Scripts to modify [SeaDAS](https://seadas.gsfc.nasa.gov/) for using [SS14](https
 
 * Backup the existing scripts in `$OCSSWROOT/ocssw_src/src/l2gen` and then place the scripts provided here.
 * Add the `get_kappa.c` to `$OCSSWROOT/ocssw_src/src/l2gen/CMakeLists.txt` in the `L2GEN_PRODUCT_FILES` section.
-* Add the following definitions to `l2prod.h`. You can choose your own product IDs (XXXs) and name, if it is available. 
+* Add the following definition to `l2prod.h`. You can choose your own product ID (XXX) and name, if it is available. 
   ```
   #define CAT_kappa              XXX
   ```
